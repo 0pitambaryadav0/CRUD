@@ -1,12 +1,14 @@
 #include <stdio.h>
-
+#include "read.c"
 void main()
 {
+     int age;
     char name[] = "";
-    int age;
+   
     char address[] = "";
-    printf("Enter your name, age and address\n");
-    scanf("%s %d %s", name, &age, address);
-    printf("Your name is: %s \nYour age is: %d \nYour address is: %s", name, age, address);
-printf("he");
+    printf("Enter your age, name and address\n");
+    scanf("%d %s %s", name, &age, address);
+    printf("Your name is: %d \nYour age is: %s \nYour address is: %s", age, name, address);
+    printf("he");
+    read();
 }
